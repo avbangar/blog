@@ -1,4 +1,72 @@
 baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+languageCode: en-uk
+title: KodeKash
 theme: "PaperMod"
+
+params:
+  enableEmoji: true 
+
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: KodeKash 🧑🏾‍💻
+    Content: >
+      Hey there, I'm Kash and welcome to my blog! 
+
+      - I'm a Software Engineer @ [**AMEX**](https://www.americanexpress.com/en-gb/) working on the iOS application 🍏
+
+      - **Swift** aside I've been known to dable in a bit of **GoLang** and **Haskell**, I'm also a massive supporter of Functional and Reative programming!
+      
+      - This is my home for sharing posts about cool things I've found or learned. 
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/avbangar"
+    - name: spotify
+      url: "https://open.spotify.com/user/usoq1wskx23fbnwlf2vkqb595?si=30a1f66d71364161"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/avbangar"
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
