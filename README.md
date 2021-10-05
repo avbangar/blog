@@ -8,7 +8,7 @@ This is the repo for my [blog](https://www.kodekash.com) where I share posts abo
 
 To create one for yourself you can read through the easy to follow [quick start guide](https://gohugo.io/getting-started/quick-start/). 
 
-P.S. - Read [this](https://docs.netlify.com/configure-builds/common-configurations/hugo/) if you want to go live 💡
+P.S. - Read [this](https://docs.netlify.com/configure-builds/common-configurations/hugo/) if you want your site to go live 💡
 
 ## Tools Used 🛠️
 
