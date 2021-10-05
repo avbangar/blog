@@ -8,8 +8,7 @@ draft: false
 ShowToc: false
 ---
 
-I once heard Swift's Optional being described as an "enum on steroids 💪". 
-Surprisingly enough that description was right on the money!
+I once heard Swift's Optional being described as an "enum on steroids 💪". Surprisingly enough that description was right on the money!
 
 {{< highlight swift >}}
 public enum Optional<Wrapped> : ExpressibleByNilLiteral {
@@ -24,9 +23,9 @@ For those new to the Swift language this object type may take some getting used 
 
 ### Scenario
 
-So first of all we need to answer the question, what is the need for this Object Type? Well... let me present the following scenario. Imagine you are developing an application that requires the user to input their name. Your first thought is to understand what components make up a name (first-name, middle-name and surname) and how you might represent these in your program (hopefully we're all thinking Strings 🤞). However it dawns on you that it is entirely possible that your user may not have a middle name or that they do but it's far too embarrassing for them to disclose. 
+So first of all we need to answer the question, what is the need for this Object Type? Well... let me present the following scenario. Imagine you are developing an application that requires the user to input their name. Your first thought is to understand what components make up a name (first-name, middle-name and surname) and how you might represent these in your program (here's hoping you though with Strings 🤞). However it dawns on you that it is entirely possible that your user may not have a middle name or that they do but it's far too embarrassing for them to disclose. 
 
-Now yes I agree, we could just use an empty String (not all scenarios are perfect).  How do you represent this in language that doesn't allow you for the free use of nil? 
+Now yes I agree, we could just use an empty String (not all scenarios are perfect but we're rolling with it) however that would not truly convey the lack of value. How do you represent this in language that doesn't allow you for the free use of nil 🤨? 
 
 ### Usage
 
