@@ -13,4 +13,8 @@ To create one for yourself you can read through the easy to follow [quick start 
 [![Hugo](https://img.shields.io/badge/-hugo-FF4088?logo=hugo&logoColor=white&style=for-the-badge)](https://gohugo.io/)
 [![Markdown](https://img.shields.io/badge/-markdown-000000?logo=markdown&logoColor=white&style=for-the-badge)](https://www.markdownguide.org/)
 
+## Deployed Via 🌎
+
+[![Netlify](https://img.shields.io/badge/-netlify-00C7B7?logo=netlify&logoColor=white&style=for-the-badge)](https://www.netlify.com)
+
 
