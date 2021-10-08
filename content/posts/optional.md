@@ -10,12 +10,12 @@ ShowToc: false
 
 I once heard Swift's Optional being described as an "enum on steroids 💪". Surprisingly enough that description was right on the money!
 
-{{< highlight swift >}}
+``` swift 
 public enum Optional<Wrapped> : ExpressibleByNilLiteral {
     case none
     case some(Wrapped)
 }
-{{< /highlight >}}
+```
 
 ### Introduction 
 
@@ -31,18 +31,18 @@ Now yes I agree, we could just use an empty String (not all scenarios are perfec
 
 Well that's where the hero of our story enters - [The Optional](https://www.youtube.com/watch?v=A_HjMIjzyMU) 🦸‍♂️. As alluded to before an Optional allows you to wrap another object, like so: 
 
-{{< highlight swift >}}
+``` swift 
 var middleName = Optional("Gertrude")
-{{< /highlight >}}
+```  
 
 Or the more common syntax: 
 
-{{< highlight swift >}}
+``` swift 
 var middleName : String? = "Gertrude"
-{{< /highlight >}}
+```  
 
 Or in the case where you want to represent 'lack of value':
 
-{{< highlight swift >}}
+``` swift 
 var middleName : String? = nil
-{{< /highlight >}}
+```  
