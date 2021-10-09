@@ -17,32 +17,40 @@ public enum Optional<Wrapped> : ExpressibleByNilLiteral {
 }
 ```
 
-### Introduction 
+# Introduction 
 
-For those new to the Swift language this object type may take some getting used to. If you didn't know already Swift doesn't allow for regular object types to be assigned a value of nil. This is where Optionals come in essentially acting as a wrapper for any other object type. It may contain the object it's claiming to hold although it also may very well be empty (it's fair enough to say that this object would make Schrodinger proud 🐱). 
+For those new to the Swift language this object type may take some getting used to. If you didn't know already Swift doesn't believe in using `nil` as a value. Optionals provide a soloution to this essentially acting as a wrapper for any other object type. In Swift `nil` is a keyword that is used to equate whether or not an Optional has a value. An Optional may contain a value for the object it's wrapping although it also may very well be empty (it's fair enough to say that this object would make Schrodinger proud 🐱). 
 
-### Scenario
+<p align="center">
+    <img src="https://media.giphy.com/media/IUm2IUJcZqKZnfWDDo/giphy.gif">
+</p>
+    
+# Why? 
 
-So first of all we need to answer the question, what is the need for this Object Type? Well... let me present the following scenario. Imagine you are developing an application that requires the user to input their name. Your first thought is to understand what components make up a name (first-name, middle-name and surname) and how you might represent these in your program (here's hoping you though with Strings 🤞). However it dawns on you that it is entirely possible that your user may not have a middle name or that they do but it's far too embarrassing for them to disclose. 
-
-Now yes I agree, we could just use an empty String (not all scenarios are perfect but we're rolling with it) however that would not truly convey the lack of value. How do you represent this in language that doesn't allow you for the free use of nil 🤨? 
-
-### Usage
-
-Well that's where the hero of our story enters - [The Optional](https://www.youtube.com/watch?v=A_HjMIjzyMU) 🦸‍♂️. As alluded to before an Optional allows you to wrap another object, like so: 
+So first of all we need to answer the question, what is the need for this Object Type? Well... let me present the following:
 
 ``` swift 
-var middleName = Optional("Gertrude")
+let array = [1,2,3,4,5]
+let x = array.firstIndex(of:10)
+if x != nil {
+    // Do something useful 
+}
+``` 
+
+In this example there is no element in the array at index 10. Most languages would fail here with something in the form of an array out of bounds error. However this is not the case in Swift. Here the function `firstIndex()` returns an Optional (in this case an Optional `Int`). If the element exists then then value is returned neatly wrapped in an Optional, if not then an Optional equating to `nil` is returrned. Simple and neat 🎁.
+
+# Decleration
+
+An Optional `String` can be declared the following ways: 
+
+``` swift 
+var middleName1 = Optional("Gertrude") // Less used syntax 
+var middleName2 : String? = "Gertrude" // More common
 ```  
 
-Or the more common syntax: 
+We can also decare without a value (equating to `nil`):
 
 ``` swift 
-var middleName : String? = "Gertrude"
-```  
-
-Or in the case where you want to represent 'lack of value':
-
-``` swift 
-var middleName : String? = nil
+var middleName1 : String?
+var middleName2 : String? = nil // Does the same as above in a more explicit fashion
 ```  
